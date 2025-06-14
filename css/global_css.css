@@ -6418,36 +6418,148 @@ label.btn {
     border-top: 1px solid rgba(255, 255, 255, 0.2);
   }
 
-  @media(max-width: 767px) {
+  /* Large Tablets (1024px) */
+  @media (max-width: 1024px) {
+    --br-rad: 2.5rem;
+    --padding: 4rem;
 
-    --br-rad: 1.5rem;
-    --padding: 1.5rem;
+    .footer-main {
+      width: 45%;
+      .contact-info {
+        text-align: center !important;
+      }
+    }
+    .footer-col {
+      width: 55%;
+      text-align: center !important;
+    }
+  }
+
+  /* Tablets (768px) */
+  @media (max-width: 768px) {
+    --br-rad: 2rem;
+    --padding: 2rem;
+
+    .footer-row {
+      justify-content: center;
+    }
+
+    .footer-main, .footer-col {
+      width: 100%;
+      padding: 0 1rem 1.5rem 1rem;
+    }
+
+    .footer-main {
+      margin-bottom: 2rem;
+      .contact-info {
+        text-align: center !important;
+      }
+    }
+
+    .footer-col {
+      text-align: center !important;
+    }
 
     .description {
       max-width: 100%;
     }
 
-    .footer-main, .footer-links {
-      width: 100%;
+    .social-links {
+      justify-content: center;
+      margin-top: 2rem;
+      order: 2;
     }
 
     .copyright-div {
       flex-direction: column;
+      gap: 1rem;
+      
       .links {
         margin-top: 0.5rem;
       }
     }
-
   }
 
-  /* @media(max-width: 574px) {
+  /* Large Phones (480px) */
+  @media (max-width: 480px) {
+    --br-rad: 1.5rem;
+    --padding: 1.5rem;
 
-    .footer-row:last-child .footer-col {
-      width: 100%;
+    .footer-main, .footer-links .footer-col {
+      padding: 0 1rem 1.5rem 1rem;
     }
 
-  } */
+    .footer-main .contact-info {
+      text-align: center !important;
+    }
 
+    .footer-col {
+      text-align: center !important;
+    }
+
+    h4 {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    ul li {
+      font-size: 0.9rem;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      width: 2.2rem;
+      height: 2.2rem;
+      line-height: 2.2rem;
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Small Phones (320px) */
+  @media (max-width: 320px) {
+    --br-rad: 1rem;
+    --padding: 1rem;
+
+    .footer-main, .footer-links .footer-col {
+      padding: 0 0.5rem 1.5rem 0.5rem;
+    }
+
+    .footer-main .contact-info {
+      text-align: center !important;
+    }
+
+    .footer-col {
+      text-align: center !important;
+    }
+
+    .logo {
+      width: 10rem;
+    }
+
+    h4 {
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+    }
+
+    ul li {
+      font-size: 0.8rem;
+    }
+
+    .social-links {
+      margin-top: 2rem;
+    }
+
+    .social-links a {
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      font-size: 0.8rem;
+      margin: 0.8rem 0.1rem 0 0;
+    }
+  }
 }
 
 /* CTA */
